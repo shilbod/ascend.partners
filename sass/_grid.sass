@@ -3,16 +3,25 @@
 
 .section
   width: 100%
-  padding: 90px 0
   margin: 90px 0
+  position: relative
 
 .container
   max-width: 1200px
   margin: auto
   padding: 0 15px
-  position: relative
+  overflow: hidden
 
 @media (max-width: 1199px)
   .container
     max-width: 992px
 
+@media (max-width: 991px)
+  .container
+    max-width: 100%
+  .section
+    margin: 60px 0
+
+@media (max-width: 575px)
+  .section
+    margin: 40px 0
