@@ -1,4 +1,16 @@
 .services
+  position: relative
+  &-shape
+    position: absolute
+    background-color: $color-element
+    width: 60%
+    height: 90%
+    top: 5%
+    left: -15%
+    opacity: 0.05
+    z-index: -1
+    border-radius: 24% 15% 24% 18% / 30% 41% 59% 46% 
+    animation: services-shape 8s linear infinite alternate
   &-wrap
     display: flex
     justify-content: space-between
@@ -66,8 +78,19 @@
   &-button-mobile
     display: none
 
+@keyframes services-shape
+  0%, 100% 
+    border-radius: 24% 15% 24% 18% / 30% 41% 59% 46% 
+  25%
+    border-radius: 63% 37% 36% 64% / 45% 51% 49% 55%
+  50%
+    border-radius: 44% 56% 54% 46% / 64% 36% 64% 36%
+
 @media (max-width: 991px)
   .services
+    &-shape
+      height: 70%
+      top: 15%
     &-wrap
       justify-content: flex-start
       flex-direction: column
@@ -100,6 +123,10 @@
 
 @media (max-width: 575px)
   .services
+    &-shape
+      width: 100%
+      height: 30%
+      top: 5%
     &-item
       width: 100%
       align-items: center
