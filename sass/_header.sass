@@ -1,0 +1,113 @@
+.header
+  background-color: #ffffff
+  width: 100%
+  z-index: 100
+  position: sticky
+  padding: 15px 0
+  top: 0
+  border-radius: 0% 0% 100% 100% / 0% 0% 25% 25%
+  &-scroll
+    box-shadow: 0px 15px 15px -15px rgba(0, 0, 0, 0.15)
+.navbar
+  &-wrap
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__logo
+    width: 200px
+    &-img
+      width: 100%
+  &__menu
+    list-style-type: none
+    display: flex
+    align-items: center
+    padding-left: 0
+    margin: 0
+    font-size: 18px
+    +semibold
+    &-item
+      display: block
+      height: 100%
+      padding: 0 15px
+      &:last-child
+        padding-right: 0
+      &:last-child  a:hover
+        color: #ffffff
+        transition: all 0.3s ease
+      a
+        transition: all 0.3s ease
+        &:hover
+          color: $color-element
+          border-bottom: 2px $color-element solid
+          transition: color 0.3s ease
+  &__menu-button
+    display: none
+
+@keyframes menu-button
+  0%, 100% 
+    border-radius: 66% 34% 53% 47% / 35% 51% 49% 65%
+  25%
+    border-radius: 63% 37% 36% 64% / 45% 51% 49% 55%
+  50%
+    border-radius: 44% 56% 54% 46% / 64% 36% 64% 36%
+
+@media (max-width: 991px)
+  .button-o
+    font-size: 24px
+    height: 50px
+    padding: 6px 30px
+  .navbar
+    &-wrap
+      height: 60px
+    &__menu
+      display: none
+      position: absolute
+      width: 100%
+      top: 100%
+      left: 0
+      margin: 0
+      padding: 30px 0
+      border-radius: 0% 0% 100% 100% / 0% 0% 30% 30% 
+      border-bottom: 5px $color-element solid
+      background-color: #fff
+      z-index: 10
+      &-item
+        text-align: center
+        font-size: 24px
+        margin: 15px 0
+        &:last-child
+          padding-right: 15px
+    &__menu-button
+      display: block
+      position: relative
+      width: 60px
+      height: 100%
+      background-color: $color-element
+      border-radius: 66% 34% 53% 47% / 35% 51% 49% 65%
+      animation: menu-button 4s linear infinite alternate
+      text-decoration: none
+      padding: 0
+      border: none
+      z-index: 100
+
+@media (max-width: 767px)
+  .header
+    padding: 10px 0
+  .button-o
+    font-size: 22px
+    height: 45px
+  .navbar
+    &-wrap
+      height: 50px
+    &__menu
+      padding: 20px 0
+      &-item
+        font-size: 22px
+        margin: 10px 0
+    &__menu-button
+      width: 50px
+
+@media (max-width: 575px)
+  .navbar
+    &__logo
+      width: 160px

@@ -1,0 +1,96 @@
+.about
+  position: relative
+  // margin: 50px 0
+  padding: 0 0
+  background-color: $color-element
+  &-shape
+    position: absolute
+    background-color: #ffffff
+    width: 420px
+    height: 100%
+    right: 8%
+    opacity: 0.05
+    border-radius: 24% 15% 24% 18% / 30% 41% 59% 46% 
+    animation: shape 8s linear infinite alternate
+  &-wrap
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin: 90px 0
+  &-img
+    border-radius: 30% 70% 75% 25% / 58% 30% 70% 42% 
+    object-fit: cover
+    width: 90%
+    height: 100%
+    animation: about-img 12s linear infinite alternate
+    &-wrap
+      background-repeat: no-repeat
+      background-position: 50% 50%
+      background-size: cover
+      display: flex
+      justify-content: flex-end
+      align-items: center
+      border-radius: 30% 70% 75% 25% / 58% 30% 70% 42% 
+      width: 50%
+      height: 440px
+      animation: about-img 12s linear infinite alternate
+  &-title-wrap
+    width: 45%
+    display: flex
+    flex-direction: column
+    color: #ffffff
+  &-title, &-subtitle
+    margin-bottom: 15px
+  &-title
+    font-size: 48px
+    line-height: 1
+    +bold
+  &-subtitle
+    font-size: 22px
+    +bold
+  &-text
+    font-size: 18px
+    margin-bottom: 25px
+  &-button
+    align-self: flex-start
+    background-color: #ffffff
+    color: $color-element
+    padding: 14px 40px
+    border: 2px #ffffff solid
+    &:hover
+      background-color: $color-element
+      border: 2px #ffffff solid
+      color: #ffffff
+      transition: all 0.3s ease
+
+
+@keyframes shape
+  0%, 100% 
+    border-radius: 24% 15% 24% 18% / 30% 41% 59% 46% 
+  25%
+    border-radius: 63% 37% 36% 64% / 45% 51% 49% 55%
+  50%
+    border-radius: 44% 56% 54% 46% / 64% 36% 64% 36%
+
+
+@keyframes about-img
+  0%, 100% 
+    border-radius: 30% 70% 75% 25% / 58% 30% 70% 42%  
+  25%
+    border-radius: 63% 37% 36% 64% / 45% 51% 49% 55%
+  50%
+    border-radius: 44% 56% 54% 46% / 64% 36% 64% 36%
+    
+
+.wave
+  background-image: url(../img/wave.png)
+  background-repeat: no-repeat
+  background-position: 50% 50%
+  background-size: cover
+  height: 40px
+  &-bottom
+    transform: rotate(180deg)
+  
+
+    
+  
