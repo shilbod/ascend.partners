@@ -1,0 +1,98 @@
+.solutions
+  position: relative
+  &-1
+    margin-bottom: 60px !important
+  &-title, &-subtitle
+    display: block
+    text-align: center
+  &-subtitle
+    margin-bottom: 60px !important
+  &-wrap
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &-img
+    border-radius: 30% 70% 75% 25% / 58% 30% 70% 42% 
+    object-fit: cover
+    width: 90%
+    height: 100%
+    animation: about-img 12s linear infinite alternate
+    &-wrap
+      background-repeat: no-repeat
+      background-position: 50% 50%
+      background-size: cover
+      display: flex
+      justify-content: flex-end
+      align-items: center
+      border-radius: 30% 70% 75% 25% / 58% 30% 70% 42% 
+      width: 50%
+      height: 360px
+      animation: solutions-img 12s linear infinite alternate
+  &-title-wrap
+    width: 45%
+    display: flex
+    flex-direction: column
+.onestream
+  &-title
+    font-size: 36px
+
+
+@keyframes solutions-img
+  0%, 100% 
+    border-radius: 30% 70% 75% 25% / 58% 30% 70% 42%  
+  25%
+    border-radius: 63% 37% 36% 64% / 45% 51% 49% 55%
+  50%
+    border-radius: 44% 56% 54% 46% / 64% 36% 64% 36%
+
+
+@media (max-width: 991px)
+  .solutions
+    &-subtitle
+      margin-bottom: 40px !important
+    &-img
+      &-wrap
+        width: 45%
+        height: 340px
+    &-title-wrap
+      width: 50%
+  .onestream
+    &-title
+      font-size: 28px
+    &-text
+      font-size: 16px
+
+@media (max-width: 767px)
+  .solutions
+    &-wrap
+      justify-content: flex-start
+      flex-direction: column
+    &-2
+      flex-direction: column-reverse
+      .solutions-title-wrap
+        margin-bottom: 0
+    &-img
+      &-wrap
+        justify-content: center 
+        width: 90%
+        height: 300px
+        margin-bottom: 40px
+    &-title-wrap
+      width: 100%
+      align-items: center
+  .onestream
+    &-title
+      margin-bottom: 10px
+    &-title
+      font-size: 26px
+    &-text
+      margin-bottom: 20px
+      text-align: center
+
+@media (max-width: 575px)
+  .solutions
+    &-img
+      &-wrap
+        width: 100%
+        height: 200px
+        margin-bottom: 40px

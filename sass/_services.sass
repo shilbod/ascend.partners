@@ -59,8 +59,6 @@
   &-item-title
     line-height: 1
     +semibold
-  &-item-text
-    font-size: 14px
   &-icon-wrap
     display: flex
     justify-content: center
@@ -121,6 +119,10 @@
         display: inline-block
         align-self: center
 
+@media (max-width: 767px)
+  .services
+    &-item-text
+      font-size: 14px
 @media (max-width: 575px)
   .services
     &-shape
