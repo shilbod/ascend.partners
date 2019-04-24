@@ -1,0 +1,109 @@
+.services
+  &-wrap
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &-title-wrap
+    width: 40%
+    display: flex
+    flex-direction: column
+  &-item
+    display: flex
+    flex-direction: column
+    width: 48%
+    background-color: #ffffff
+    border-radius: 10px
+    padding: 30px 20px
+    cursor: pointer
+    box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.05)
+    transition: all 0.3s ease
+    &:nth-child(1), &:nth-child(2)
+      margin-bottom: 4%
+    &:nth-child(2n)
+      transform: translateY(-40px)
+    &:hover
+      background-color: $color-element
+      transition: all 0.3s ease
+      &:nth-child(2n)
+        transform: translateY(-50px)
+      &:nth-child(2n+1)
+        transform: translateY(-10px)
+      .services-item-title, .services-item-text
+        color: #ffffff
+        transition: all 0.3s ease
+      .services-icon-wrap
+        background-color: lighten($color-element,20%)
+        transition: all 0.3s ease
+        i
+          background-color: #ffffff
+          transition: all 0.3s ease
+    &-wrap
+      display: flex
+      justify-content: space-between
+      flex-flow: row wrap
+      width: 55%
+  &-icon-wrap, &-item-title
+    margin-bottom: 15px
+  &-item-title
+    line-height: 1
+    +semibold
+  &-item-text
+    font-size: 14px
+  &-icon-wrap
+    display: flex
+    justify-content: center
+    align-items: center
+    border-radius: 10px
+    width: 80px
+    height: 80px
+    background-color: lighten($color-element,60%)
+    i
+      display: block
+      width: 60%
+      height: 60%
+      mask-size: cover
+      background-color: $color-element
+  &-button-mobile
+    display: none
+
+@media (max-width: 991px)
+  .services
+    &-wrap
+      justify-content: flex-start
+      flex-direction: column
+    &-title-wrap
+      width: 100%
+      align-items: center
+      margin-bottom: 40px
+    &-item
+      width: 48.5%
+      &:nth-child(1), &:nth-child(2)
+        margin-bottom: 3%
+      &:nth-child(2n)
+        transform: none
+      &:hover
+        &:nth-child(2n)
+          transform: none
+        &:nth-child(2n+1)
+          transform: none
+      &-wrap
+        width: 100%
+        margin-bottom: 40px
+    &-text
+      text-align: center
+      margin-bottom: 0
+    &-button
+      display: none
+      &-mobile
+        display: inline-block
+        align-self: center
+
+@media (max-width: 575px)
+  .services
+    &-item
+      width: 100%
+      align-items: center
+      &:nth-child(1), &:nth-child(2), &:nth-child(3)
+        margin-bottom: 15px
+      &-text
+        text-align: center

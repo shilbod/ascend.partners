@@ -14,7 +14,7 @@ $('.navbar__menu-button').on('click', function(){
 
 $(document).ready(function() {
   $('.hero-slider').slick({
-    // autoplay: true,
+    autoplay: true,
     autoplaySpeed: 5000,
     pauseOnHover: false,
     draggable: false,
