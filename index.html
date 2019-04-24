@@ -10,7 +10,6 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="libs/fontawesome/all.min.css">
-  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
 
   <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/vnd.microsoft.icon">
 </head>
@@ -24,16 +23,16 @@
         </a>
         <ul class="navbar__menu">
           <li class="navbar__menu-item">
-            <a href="#">About</a>
+            <a href="#about">About</a>
           </li>
           <li class="navbar__menu-item">
-            <a href="#">Services</a>
+            <a href="#services">Services</a>
           </li>
           <li class="navbar__menu-item">
-            <a href="#">Partners</a>
+            <a href="#partners">Partners</a>
           </li>
           <li class="navbar__menu-item">
-            <a href="#">Solutions</a>
+            <a href="#solutions">Solutions</a>
           </li>
           <li class="navbar__menu-item">
             <a  href="#">Events</a>
@@ -118,7 +117,7 @@
   </section>
   <!-- /.section hero -->
 
-  <section class="section about">
+  <section id="about" class="section about">
     <div class="about-shape"></div>
     <div class="wave wave-top"></div>
     <div class="container">
@@ -141,7 +140,7 @@
   </section>
   <!-- /.section about -->
 
-  <section class="section services">
+  <section id="services" class="section services">
     <div class="services-shape"></div>
       <div class="container">
         <div class="services-wrap">
@@ -194,7 +193,7 @@
   </section>
   <!-- /.section about -->
 
-  <section class="section partners">
+  <section id="partners" class="section partners">
     <div class="partners-shape"></div>
     <div class="wave wave-top"></div>
     <div class="container">
@@ -232,13 +231,13 @@
   </section>
   <!-- /.section partners -->
 
-  <section class="section solutions">
+  <section id="solutions" class="section solutions">
       <div class="container">
         <h2 class="section-title solutions-title">Solutions</h2>
         <span class="section-subtitle solutions-subtitle">20+ years experience delivering financial solutions</span>
         <div class="solutions-wrap solutions-1">
-          <div class="solutions-img-wrap" style="background-image: linear-gradient(rgba(100%, 100%, 100%, 0.8), rgba(100%, 100%, 100%, 0.8)), url(img/about-img.jpg)">
-            <img src="img/about-img.jpg" class="solutions-img">
+          <div class="solutions-img-wrap" style="background-image: linear-gradient(rgba(100%, 100%, 100%, 0.8), rgba(100%, 100%, 100%, 0.8)), url(img/Onestream.jpg)">
+            <img src="img/Onestream.jpg" class="solutions-img">
           </div>
           <div class="solutions-title-wrap">
             <h3 class="section-title onestream-title">Onestream Software</h3>
@@ -253,8 +252,8 @@
             <span class="section-text onestream-text">We work closely with Oracle Hyperion development teams on product direction, new functionality and general subject matter expertise. We have collaborated with Oracle on beta testing and product strategy for FDMEE, HFM 11 releases, Account Reconciliation Manager (ARM), and Supplemental Data Manager (SDM).</span>
             <a href="#" class="button section-button solutions-button">Contact us</a>
           </div>
-          <div class="solutions-img-wrap" style="background-image: linear-gradient(rgba(100%, 100%, 100%, 0.8), rgba(100%, 100%, 100%, 0.8)), url(img/about-img.jpg)">
-            <img src="img/about-img.jpg" class="solutions-img">
+          <div class="solutions-img-wrap" style="background-image: linear-gradient(rgba(100%, 100%, 100%, 0.8), rgba(100%, 100%, 100%, 0.8)), url(img/oracle.jpg)">
+            <img src="img/oracle.jpg" class="solutions-img">
           </div>
         </div>
         <!-- /.solutions-wrap -->
@@ -263,9 +262,27 @@
   </section>
   <!-- /.section solutions -->
 
+  <footer class="footer">
+    <div class="wave wave-top"></div>
+    <div class="container">
+      <div class="footer-wrap">
+        <a href="/" class="footer-logo">
+          <img src="img/logo-white.png" alt="Ascend Partners" class="footer-logo-img">
+        </a>
+        <span class="footer-copyright">© Ascend Partners Inc 2019</span>
+        <a href="mailto:info@ascend.partners" class="footer-mail">
+            <i class="fas fa-envelope fa-lg"></i>
+            <span class="footer-email">info@ascend.partners</span>
+        </a>
+      </div>
+      <!-- /.footer-wrap -->
+    </div>
+    <!-- /.container -->
+  </footer>
+  <!-- /.footer -->
+
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/main.js"></script>
   <script src="js/slick.min.js"></script>
-  <script src="js/jquery.fancybox.min.js"></script>
 </body>
 </html>
